@@ -19,3 +19,9 @@ $ rails db:rollback #le faire le nombre de fois utile pour que tous les migratio
 $ rails db:reset
 $ rails db:migrate
 $ rails db:seed
+
+author 
+jb  faria
+william doré
+mathieu strosberg
+aurelien duprez
