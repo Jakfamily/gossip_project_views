@@ -30,7 +30,7 @@ class PagesController < ApplicationController
     
     
     #définition de la page auteur dynamique
-    def auteur
+    def author
       @gossips = Gossip.all
       @title = params[:title]
     end  

@@ -17,6 +17,6 @@ Rails.application.routes.draw do
   get 'potin/:id', to:'pages#potin', as: 'potin'
 
   #mise en place d'un route dynamique
-  get 'potin/auteur/:title', to:'pages#auteur', as: 'auteur'
+  get 'potin/author/:title', to:'pages#author', as: 'author'
 
 end
