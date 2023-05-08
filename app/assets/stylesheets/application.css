@@ -2,7 +2,7 @@
 
 .team4 {
   font-family: "Montserrat", sans-serif;
-  color: #8d97ad;
+  color: #8064a2;
   font-weight: 300;
 }
 
@@ -56,13 +56,13 @@ a.btn-auteur:hover {
 }
 
 .team4 .subtitle {
-  color: #8d97ad;
+  color: #8064a2;
   line-height: 24px;
   font-size: 13px;
 }
 
 .team4 ul li a {
-  color: #8d97ad;
+  color: #8064a2;
   padding-right: 15px;
   -webkit-transition: 0.1s ease-in;
   -o-transition: 0.1s ease-in;
@@ -72,7 +72,7 @@ a.btn-auteur:hover {
 .team4 ul li a:hover {
   -webkit-transform: translate3d(0px, -5px, 0px);
   transform: translate3d(0px, -5px, 0px);
-  color: #316ce8;
+  color: #ffbb98;
 }
 
 .bastien {
