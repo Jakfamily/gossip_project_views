@@ -1,24 +1,21 @@
-# README
+Installation ⚙️
+Utilisez la commande suivante avant de lancer le programme
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+$ bundle install
 
-Things you may want to cover:
+Lancer le programme 🚦
+Il ne vous reste plus qu'à tester l'ensemble des relations de notre BDD depuis les pages views de l'application!
 
-* Ruby version
+$ rails server
 
-* System dependencies
+Rendez-vous ensuite sur le site 👉 The Gossip Project Enjoy !
 
-* Configuration
+Supprimer la BDD et la relance 🚦
 
-* Database creation
+Relance la base de données pour de nouveaux gossips
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$ rails db:rollback #le faire le nombre de fois utile pour que tous les migrations soient down
+#vérifie que tout est down avec la commande $ rails db:migrate:status
+$ rails db:reset
+$ rails db:migrate
+$ rails db:seed
