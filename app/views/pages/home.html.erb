@@ -9,6 +9,7 @@
   <div class="card-body">
     <h5 class="card-title"><%= gossip.title %></h5>
     <p class="card-text"><em><%= gossip.content %></em></p>
+    <p class="card-text">Par <%= gossip.user.first_name %></p>
     <a href="potin/<%=gossip.id%>" class="btn btn-primary">Voir le potin</a>
   </div>
 </div>

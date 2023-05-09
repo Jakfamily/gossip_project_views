@@ -35,27 +35,4 @@ class PagesController < ApplicationController
       @title = params[:title]
     end
     
-    ##################potin###################
-    #
-    # Affichage de la page d'édition d'un potin
-    def edit_potin
-      @potin = Potin.find(params[:id])
-    end
-
-    # Mise à jour d'un potin
-    def update
-     @potin = Potin.find(params[:id])
-
-      if @potin.update(potin_params)
-        redirect_to root_path, notice: "Le potin a bien été modifié."
-      else
-      render :edit_potin
-      end
-    end
-
-    private
-
-    def potin_params
-      params.require(:potin).permit(:author, :content)
-    end
 end

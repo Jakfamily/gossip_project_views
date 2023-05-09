@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   #mise en place d'une route dynamique
   get 'potin/author/:title', to:'pages#author', as: 'author'
 
-  #mise en place d'une route pour éditer un potin
-  get 'potin/:id/edit', to: 'pages#edit', as: 'edit_potin'
+  resources :gossip, only: [:index, :new, :create]
+  get 'new', to:'gossip#new'
 
 end
