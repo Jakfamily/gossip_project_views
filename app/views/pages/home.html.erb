@@ -3,7 +3,7 @@
 
 
 <div class="container row justify-content-center">
-<% @gossips.each do |gossip| %>
+<% @gossips.each_with_index do |gossip,id|%>
 
 <div class="card mb-3 mx-4 card-home" style="width: 18rem;">
   <div class="card-body">

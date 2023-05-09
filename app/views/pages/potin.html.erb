@@ -1,5 +1,5 @@
 <div class="container" style="height:80vh">
-    <% @gossips.each do |gossip| %>
+    <% @gossips.each_with_index do |gossip,id| %>
       <% if gossip.id == @id.to_i%>
         <h3> <%= gossip.title %></h3>
         <p> <em><%= gossip.content %></em></p>

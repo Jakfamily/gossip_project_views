@@ -3,7 +3,7 @@
   <h3 class="mb-5">Ses articles :</h3>
 
   <div class="container row justify-content-center">
-    <% @gossips.each do |gossip| %>
+    <% @gossips.each_with_index do |gossip,id| %>
       <% if gossip.title == @title%>
         <div class="card mb-3 mx-4 card-home" style="width: 18rem;">
           <div class="card-body">

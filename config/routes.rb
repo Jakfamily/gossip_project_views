@@ -13,10 +13,13 @@ Rails.application.routes.draw do
   get 'welcome(/:first_name)', to: 'pages#welcome', as: 'welcome' #création d'un nom pour le chemin
   #mise en place d'un parametre optionnel pour first_name
 
-  #mise en place d'un route dynamique
+  #mise en place d'une route dynamique
   get 'potin/:id', to:'pages#potin', as: 'potin'
 
-  #mise en place d'un route dynamique
+  #mise en place d'une route dynamique
   get 'potin/author/:title', to:'pages#author', as: 'author'
+
+  #mise en place d'une route pour éditer un potin
+  get 'potin/:id/edit', to: 'pages#edit', as: 'edit_potin'
 
 end
