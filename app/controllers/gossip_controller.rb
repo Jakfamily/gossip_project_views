@@ -2,6 +2,7 @@ class GossipController < ApplicationController
 
   def index
     @gossips = Gossip.all
+    redirect_to root_path
   end
 
   def new
@@ -12,7 +13,6 @@ class GossipController < ApplicationController
     @gossip = Gossip.new(gossip_params)
 
     if @gossip.save
-      @gossips = Gossip.order(id: :desc)
       redirect_to gossip_params, notice: "Le super potin a été créé avec succès!"
     else
       flash.now[:alert] = "Error: " + @gossip.errors.full_messages.join(", ")
